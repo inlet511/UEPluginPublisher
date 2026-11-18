@@ -1,0 +1,36 @@
+[package]
+name = "ue-plugin-publisher"
+version = "0.2.0"
+edition = "2021"
+rust-version = "1.85"
+authors = ["Ken An"]
+description = "Reusable Unreal Engine 5 plugin source and binary release packager"
+repository = "https://github.com/inlet511/UEPluginPublisher"
+readme = "README.md"
+keywords = ["unreal-engine", "ue5", "plugin", "fab", "packaging"]
+license = "LicenseRef-Proprietary"
+publish = false
+default-run = "ue-plugin-publisher"
+
+[[bin]]
+name = "ue-plugin-publisher"
+path = "src/main.rs"
+
+[[bin]]
+name = "ue-plugin-publisher-cli"
+path = "src/cli.rs"
+
+[dependencies]
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+eframe = { version = "0.31", default-features = false, features = ["default_fonts", "glow", "x11", "wayland"] }
+rfd = "0.16"
+globset = "0.4"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+walkdir = "2"
+zip = { version = "2.4", default-features = false, features = ["deflate"] }
+
+[target.'cfg(windows)'.dependencies]
+winreg = "0.55"

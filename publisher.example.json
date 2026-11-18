@@ -1,0 +1,24 @@
+{
+  "output": "./releases",
+  "engines": [
+    "C:/Program Files/Epic Games/UE_5.7",
+    "D:/Epic Games/UE_5.8"
+  ],
+  "plugins": [
+    {
+      "path": "D:/Plugins/YourFirstPlugin/YourFirstPlugin.uplugin",
+      "platforms": ["Win64"],
+      "exclude": ["Docs/Internal/**"]
+    },
+    {
+      "path": "D:/Plugins/YourSecondPlugin",
+      "platforms": ["Win64"],
+      "engines": ["D:/Epic Games/UE_5.8"],
+      "exclude": []
+    }
+  ],
+  "build": true,
+  "binary_archive": true,
+  "low_memory_build": false,
+  "max_parallel_actions": 2
+}

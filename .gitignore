@@ -1,0 +1,17 @@
+/target/
+/publisher.json
+/publisher.json.*.bak
+/publisher.json.*.tmp
+/releases/
+/output/
+/dist/
+/.idea/
+/.vscode/
+*.log
+*.zip
+*.zip.sha256
+*.pdb
+*.exe
+*.tmp
+.DS_Store
+Thumbs.db

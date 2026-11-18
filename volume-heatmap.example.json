@@ -1,0 +1,15 @@
+{
+  "output": "./releases",
+  "engines": ["C:/Program Files/Epic Games/UE_5.8"],
+  "plugins": [
+    {
+      "path": "D:/Plugins/VolumeHeatmap/VolumeHeatmap.uplugin",
+      "platforms": ["Win64"],
+      "exclude": ["Tools/**"]
+    }
+  ],
+  "build": true,
+  "binary_archive": true,
+  "low_memory_build": true,
+  "max_parallel_actions": 2
+}
